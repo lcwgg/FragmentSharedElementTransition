@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small"
+                android:layout_marginTop="@dimen/small">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="@dimen/listview_thumbnail"
+        android:layout_height="@dimen/listview_thumbnail"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/imageview"
+        android:gravity="center_vertical"
+        android:padding="@dimen/medium"
+        android:text="Lorem Ipsum"
+        android:textAppearance="@android:style/TextAppearance.Large"/>
+
+</RelativeLayout>
