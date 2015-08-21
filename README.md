@@ -1,4 +1,4 @@
-# FragmentShareElementTransition
+# FragmentSharedElementTransition
 Examples of shared element transition between fragments
 
 In this example, all window transitions are `explode` and there is a shared element transition between the first activity and a fragment contained in the second activity. Then there is a sliding transition between 2 fragments with a shared element transition.
@@ -13,6 +13,7 @@ getFragmentManager().beginTransaction()
 ```
 
 *Set the shareed element transition to the fragment*
+
 __Java__
 ```java
 fragment.setSharedElementEnterTransition(
