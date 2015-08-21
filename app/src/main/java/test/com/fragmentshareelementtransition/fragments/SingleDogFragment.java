@@ -31,6 +31,7 @@ public class SingleDogFragment extends Fragment {
         bundle.putString(ARG_TRANSITION_NAME, transitionName);
         bundle.putInt(ARG_IMAGE_REF_ID, imageRefId);
         fragment.setSharedElementEnterTransition(TransitionInflater.from(context).inflateTransition(R.transition.change_transform));
+//        fragment.setSharedElementReturnTransition(TransitionInflater.from(context).inflateTransition(R.transition.change_transform));
         fragment.setEnterTransition(TransitionInflater.from(context).inflateTransition(R.transition.slide_left));
         fragment.setExitTransition(TransitionInflater.from(context).inflateTransition(R.transition.slide_left));
         fragment.setArguments(bundle);

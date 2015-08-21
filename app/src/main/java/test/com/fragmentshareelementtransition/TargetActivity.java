@@ -57,6 +57,7 @@ public class TargetActivity extends Activity {
     @Override
     public void onBackPressed() {
         if (mDogListFragment.isVisible()) {
+            // override doglistfragment exit to have a different transition
             mDogListFragment.setExitTransition(TransitionInflater.from(this).inflateTransition(R.transition.slide_bottom));
             getFragmentManager().beginTransaction()
                     .replace(R.id.container, new Fragment())
