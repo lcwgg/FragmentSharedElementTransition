@@ -66,7 +66,9 @@ With shared element transition | Without shared element transition
     }
 ```
 In the documentation : 
-> Sets the Transition that will be used to move Views out of the scene when the fragment is removed, hidden, or detached when not popping the back stack.
+> public void setExitTransition (Object transition)
+
+> Sets the Transition that will be used to move Views out of the scene when the fragment is removed, hidden, or detached when not popping the back stack. [...]
 
 This means that if we click back, since this fragment is not on the backstack, it's not popped and then the exit transition won't be applied. So I replace the current fragment with an empty one just before going back to the previous activity to force the transition to happen.
  
